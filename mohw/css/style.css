@@ -326,11 +326,9 @@ button {
 
 #container .contents.data-wrap {
     max-width: 100%;
-    /* margin-top:77px; */
 }
 
 #container .row {
-    /* padding: 0 121px; */
     padding: 0 6.25%;
 }
 
@@ -346,11 +344,9 @@ button {
 }
 
 .data-wrap .section01>.left-wrap {
-    /* width: 226px; */
     width: 356px;
     height: 509px;
     margin-right: 20px;
-    /* margin: 0 5% 0 2.5%; */
     background: url(../images/human.gif) no-repeat 2.5% 0;
 }
 
@@ -511,8 +507,6 @@ button {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    /* min-width:337px; */
-    /* padding: 10px 40px; */
     padding: 10px 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -568,7 +562,6 @@ button {
     justify-content: center;
     min-width: 363px;
     height: 306px !important;
-    /* padding-top: 40px !important; */
     padding: 40px 20px 0 !important;
 
 }
@@ -614,7 +607,6 @@ button {
     justify-content: center;
     min-width: 292px;
     height: 306px !important;
-    /* margin: 0 80px; */
     margin: 0 20px;
     padding: 0 20px;
     background-color: #f2f2f2;

@@ -1,0 +1,105 @@
+/* 공통 */
+#header {
+    width:100%;
+}
+#header .flex-row > .btn-notice {
+    display:none;
+}
+
+/* 디바이스 768이하 세팅 */
+@media only screen and (max-width: 768px) {
+    /* 회원가입 */
+    .join-wrap {
+        min-width:320px;
+        max-width: 480px;
+        margin:0 auto;
+    }
+    .join-wrap .beulraegodeo1-1-hoeweongaib-peiji {
+        width:100%;
+        height:auto;
+        padding:0 40px;
+    }
+    .join-wrap .beulraegodeo1-1-hoeweongaib-peiji .title {
+        width:100%;
+        margin-top:35px;
+        font-size:28px;
+        text-align: left;
+    }
+    .join-wrap .join {
+        display:block;
+        width:100%;
+        margin-top:75px;
+        font-size:28px;
+        font-weight:700;
+        text-align: center;
+        color:#fff;
+    }
+    .join-wrap .beulraegodeo1-1-hoeweongaib-peiji .overlap-group1 {
+        width: 100%;
+        margin:65px auto 0;
+        padding:0 45px;
+        background-color:transparent;
+        border:none;
+        box-shadow: none;
+    }
+    .join-wrap .x1-1,
+    .join-wrap .x12 {
+        display:none;
+    }
+    .join-wrap .overlap-group1 > div {
+        width:100%;
+    }
+    .join-wrap .overlap-group1 input {
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+    }
+    .join-wrap .overlap-group1 button[type="submit"] {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100% !important;
+        height:30px !important;
+        margin:65px 0 0 !important;
+        border-radius:0 !important;
+        background-color:#fff !important;
+        text-align:center;
+        color:#000;
+        font-size:14px;
+    }
+
+    /* 마이 */
+    .my-wrap {
+        min-width:320px;
+        max-width:768px;
+        margin:0 auto;
+        padding:0 15px;
+        background-color: var(--black);
+    }
+
+    /* 공통 */
+    #header {
+        margin-top:30px;
+    }
+    #header .flex-row {
+        height: auto;
+        justify-content: space-between;
+    }
+    #header .flex-row > div,
+    #header .flex-row > a {display:none;}
+    #header .flex-row > .logo {
+        display:block;
+    }#header .flex-row > .btn-notice
+    #header .flex-row > .logo > div {
+        min-width: auto;
+        min-height: auto;
+        font-size: 28px;
+    }
+    #header .flex-row > .btn-notice {
+        display:block;
+        background:url('./img/icon-notice.svg') no-repeat;
+    }
+    #header .flex-row > .btn-notice img {
+        width:25px;
+    }
+}
