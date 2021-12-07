@@ -17,29 +17,25 @@
 /* ----------------------------------------------------------------------
     설정1
 ----------------------------------------------------------------------- */
-.set1-wrap .mainContents {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding:0;
-    background-color:#fff;
-}
+
 
 .set1-wrap .mainContents .menu {
     display: block;
     width:100%;
     height: auto;
-    margin:0;
 }
 .set1-wrap .mainContents .menu ul {
     display: block;
     width: 100%;
     height:auto;
     margin: 0;
-    border-radius: 0;
+    border-radius: 10px;
 }
 .set1-wrap .mainContents .menu ul li {
     border-bottom: 1px solid #d9d9d9;
+}
+.set1-wrap .mainContents .menu ul li:last-child {
+    border-bottom:none;
 }
 .set1-wrap .mainContents .menu ul li a {
     display: flex;
@@ -48,6 +44,7 @@
     position: relative;
     padding:0 45px;
     color:#000;
+    font-size: 14px;
 }
 .set1-wrap .mainContents .menu ul li a::after {
     content:'';
@@ -500,8 +497,18 @@
         설정1
     ----------------------------------------------------------------------- */
     .set1-wrap .mainContents {
+        width: 100%;
+        height: auto;
+        margin: 0;
         padding:0;
         background-color:#fff;
+    }
+    .set1-wrap .mainContents {
+        padding:0;
+        background-color:#fff;
+    }
+    .set1-wrap .mainContents .menu {
+        margin:0;
     }
 
     .set1-wrap .mainContents .menu ul {
@@ -512,6 +519,9 @@
         border-radius: 0;
     }
     .set1-wrap .mainContents .menu ul li {
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .set1-wrap .mainContents .menu ul li:last-child {
         border-bottom: 1px solid #d9d9d9;
     }
     .set1-wrap .mainContents .menu ul li a {
