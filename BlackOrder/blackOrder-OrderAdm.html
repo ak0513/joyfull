@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>주문현황</title><!-- title 추가 -->
+	<!-- viewport 수정 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="og:type" content="website" />
+	<meta name="twitter:card" content="photo" />
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/orderadm.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/commonGroup.css" />
+	-->
+
+	<!-- 신규 css 적용을 위해 기존에 사용중인 css는 절대경로 사용 -->
+	<link rel="stylesheet" type="text/css" href="https://blackorder.kr/css/orderadm.css" />
+	<link rel="stylesheet" type="text/css" href="https://blackorder.kr/css/styleguide.css" />
+	<link rel="stylesheet" type="text/css" href="https://blackorder.kr/css/globals.css" />
+	<link rel="stylesheet" type="text/css" href="https://blackorder.kr/css/commonGroup.css" />
+	<link rel="stylesheet" type="text/css" href="./css/contents.css" />
+	<!-- //신규 css 적용을 위해 기존에 사용중인 css는 절대경로 사용 -->
+</head>
+
+<body style="margin: 0; background: #000000">
+	<div class="container-center-horizontal orderAdm-wrap">
+		<div class="beulraegodeo3-jumungwanri-peiji screen">
+			<!--Header-->
+			<div class='flex-row'>
+				<!-- class logo 추가 -->
+				<a href='main.html' class="logo">
+					<div class='surname adamina-normal-white-30px'>Black Order</div>
+				</a>
+
+				<div class='flex-col'>
+					<a href='OrderAdm.html'>
+						<div class='text nanumgothic-bold-white-16px'>주문관리</div>
+					</a>
+				</div>
+
+				<a href='TotalIncome.html'>
+					<div class='text-51 nanumgothic-bold-white-16px'>매출집계</div>
+				</a>
+
+				<div>
+					<a href='accountLink.php'>
+						<div class='text-52 nanumgothic-bold-white-16px'>계정연동</div>
+					</a>
+
+				</div>
+
+				<div style='margin-left:1vw; border-bottom:1px white solid;'>
+					<a href='setMyInfo.php'>
+						<div class='text-53 nanumgothic-bold-white-16px'>설정</div>
+					</a>
+				</div>
+
+				<div class='overlap-group2'>
+					<div class='text-55 nanumgothic-bold-white-12px'>베이직</div>
+				</div>
+				<!-- 알림 추가 -->
+				<a href="#" class="btn-notice"><img src="./img/icon-notice.svg" alt="알림"></a>
+			</div>
+			<!-- /Header-->
+
+			<div class="flex-row-1 nanumgothic-normal-white-16px">
+				<div class="overlap-group1" onclick="location.href='OrderAdm.html'" style="cursor:pointer">
+					<div class="text-56">신규주문</div>
+					<div class="number">17</div>
+				</div>
+
+				<div class="overlap-group6" onclick="location.href='orderChk.php'" style="cursor:pointer">
+					<div class="text-57">발주확인</div>
+					<div class="number-1">46</div>
+				</div>
+
+				<div class="overlap-group3" onclick="location.href='cancelManage.php'" style="cursor:pointer">
+					<div class="text">취소관리</div>
+					<div class="number-2">1</div>
+				</div>
+
+				<div class="overlap-group8" onclick="location.href='returnManage.php'" style="cursor:pointer">
+					<div class="text">반품관리</div>
+					<div class="number-3">0</div>
+				</div>
+				<div class="overlap-group5" onclick="location.href='changeManage.php'" style="cursor:pointer">
+					<div class="text">교환관리</div>
+					<div class="number-4">0</div>
+				</div>
+
+				<div class="overlap-group4" onclick="location.href='customerInquiry.php'" style="cursor:pointer">
+					<div class="text nanumgothic-normal-white-16px">고객문의</div>
+				</div>
+
+				<div class="overlap-group7" onclick="location.href='totDeliService.php'" style="cursor:pointer">
+					<div class="text nanumgothic-normal-white-16px">통합관리</div>
+				</div>
+			</div>
+
+			<div class="overlap-group">
+				<table class="overlap-group9">
+					<thead>
+						<tr>
+							<th style="width: 5%">선택</th>
+							<th style="width: 10%">주문일자</th>
+							<th style="width: 7%">판매처</th>
+							<th style="width: 7%">수령자</th>
+							<th style="width: 13%">전화번호</th>
+							<th style="width: 12%">통관번호</th>
+							<th style="width: 23%">상품명</th>
+							<th style="width: 10%">옵션명</th>
+							<th style="width: 13%">
+								<div class="overlap-group10">
+									<div class="text-7">발송처리</div>
+								</div>
+								<div class="overlap-group11">
+									<div class="text-7">새로고침</div>
+								</div>
+								<img class="x33-1" src="img/------33-1@2x.png" />
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>2021-11-11</td>
+							<td>쿠팡</td>
+							<td>홍길동</td>
+							<td>010-1234-1234</td>
+							<td>-</td>
+							<td>멋쟁이 겨울 팔토시 신상품 한양 인싸템..</td>
+							<td>1. 호랑이 무늬</td>
+							<td><button class="sendBtn">발송하기</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="mainContents">
+				<div class="order-title">주문 및 문의현황</div>
+				<div class="order-list">
+					<ul>
+						<li>
+							<div class="logo"></div>
+							<div class="data">
+								<dl>
+									<dt>신규주문</dt>
+									<dd>12</dd>
+								</dl>
+								<dl>
+									<dt>주문취소</dt>
+									<dd>-</dd>
+								</dl>
+								<dl>
+									<dt>교환/반품</dt>
+									<dd>1</dd>
+								</dl>
+								<dl>
+									<dt>고객문의</dt>
+									<dd>9</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<div class="logo"></div>
+							<div class="data">
+								<dl>
+									<dt>신규주문</dt>
+									<dd>12</dd>
+								</dl>
+								<dl>
+									<dt>주문취소</dt>
+									<dd>-</dd>
+								</dl>
+								<dl>
+									<dt>교환/반품</dt>
+									<dd>1</dd>
+								</dl>
+								<dl>
+									<dt>고객문의</dt>
+									<dd>9</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<div class="logo"></div>
+							<div class="data">
+								<dl>
+									<dt>신규주문</dt>
+									<dd>12</dd>
+								</dl>
+								<dl>
+									<dt>주문취소</dt>
+									<dd>-</dd>
+								</dl>
+								<dl>
+									<dt>교환/반품</dt>
+									<dd>1</dd>
+								</dl>
+								<dl>
+									<dt>고객문의</dt>
+									<dd>9</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex-row-2">
+				<div class="text-54 nanumgothic-extra-bold-white-20px">
+					<span class="span nanumgothic-extra-bold-white-20px">blackorder.kr</span>
+					<span class="span nanumgothic-normal-white-20px"> with </span>
+					<span class="span nanumgothic-extra-bold-white-20px">Rapid global</span>
+					<span class="span nanumgothic-normal-white-20px">, Changwon KOREA</span>
+				</div>
+				<img class="x321-1" src="img/------321-1@2x.png" />
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

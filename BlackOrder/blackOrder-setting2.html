@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>설정1</title>
+	<title>설정2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<!-- 
 	<link rel="stylesheet" type="text/css" href="css/setMyInfo.css" />
@@ -19,8 +19,8 @@
 </head>
 
 <body>
-	<!-- my-wrap 클래스 추가-->
-	<div class="container-center-horizontal set1-wrap">
+	<!-- set2-wrap 클래스 추가-->
+	<div class="container-center-horizontal set2-wrap">
 		<div class="beulraegodeo3-jumungwanri-peiji screen">
 			<!--헤더-->
 			<!--Header-->
@@ -56,17 +56,36 @@
 				<div class='overlap-group2'>
 					<div class='text-55 nanumgothic-bold-white-12px'>베이직</div>
 				</div>
+				<!-- 알림 추가 -->
 				<a href="#" class="btn-notice"><img src="./img/icon-notice.svg" alt="알림"></a>
 			</div>
 			<!-- /Header-->
 
+			<!-- 현재위치 -->
+			<div id="m-top-current">
+				<button type="button" class="btn-prev"><img src="./img/icon-left.svg" width="20" alt="이전"></button>
+				<div class="title">쇼핑몰 관리</div>
+				<button type="button" class="btn-add"><img src="./img/icon-add.svg" width="30" alt="추가"></button>
+			</div>
+			<!-- / 현재위치 -->
+			
 			<div class="mainContents">
-				<div class="menu">
+				<div class="mall-list">
 					<ul>
-						<li><a href="">쇼핑몰 관리</a></li>
-						<li><a href="">알림 설정</a></li>
-						<li class="no-arrow"><a href="">로그아웃</a></li>
-						<li class="version">버전정보<span>1.1.0</span></li>
+						<li>
+							<div class="mall-name">쿠팡</div>
+							<a href=""><img src="./img/icon-pencil.svg" alt="수정"></a>
+						</li>
+						<li>
+							<div class="mall-name">11번가</div>
+							<a href=""><img src="./img/icon-pencil.svg" alt="수정"></a>
+						</li>
+						<li>
+							<div class="mall-name">G마켓</div>
+						</li>
+						<li>
+							<div class="mall-name">옥션</div>
+						</li>
 					</ul>
 				</div>
 

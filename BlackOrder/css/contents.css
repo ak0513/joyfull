@@ -14,25 +14,70 @@
     display: none;
 }
 
-/* ----------------------------------------------------------------------
-    설정1
------------------------------------------------------------------------ */
-
-
-.set1-wrap .mainContents .menu {
+.set1-wrap .mainContents > :nth-child(1),
+.set2-wrap .mainContents > :nth-child(1) {
     display: block;
     width:100%;
     height: auto;
 }
-.set1-wrap .mainContents .menu ul {
+
+.set1-wrap .mainContents > :nth-child(1) > :nth-child(1),
+.set2-wrap .mainContents > :nth-child(1) > :nth-child(1) {
     display: block;
     width: 100%;
     height:auto;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 0;
+}
+
+/* ----------------------------------------------------------------------
+    공통
+----------------------------------------------------------------------- */
+#m-top-current {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - -28px);
+    height: 60px;
+    margin:20px -14px 0;
+    border-bottom:1px solid #dadada;
+    background-color:#fff;
+}
+#m-top-current button {
+    position: absolute;
+    top:50%;
+    border:none;
+    background-color: transparent;
+}
+
+#m-top-current .btn-prev {
+    left:15px;
+    margin-top:-10px;
+}
+
+#m-top-current .btn-add {
+    right:15px;
+    margin-top:-15px;
+}
+
+#m-top-current .title {
+    color:#444;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------------------
+    설정1
+----------------------------------------------------------------------- */
+
+.set1-wrap .mainContents .menu ul {
+    border-radius: 10px !important;
 }
 .set1-wrap .mainContents .menu ul li {
     border-bottom: 1px solid #d9d9d9;
+    font-size: 14px;
 }
 .set1-wrap .mainContents .menu ul li:last-child {
     border-bottom:none;
@@ -40,7 +85,7 @@
 .set1-wrap .mainContents .menu ul li a {
     display: flex;
     align-items: center;
-    height:63px;
+    height:60px;
     position: relative;
     padding:0 45px;
     color:#000;
@@ -63,7 +108,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:63px;
+    height:60px;
+    padding:0 45px;
+}
+
+
+/* ----------------------------------------------------------------------
+    설정2
+----------------------------------------------------------------------- */
+
+.set2-wrap .mainContents .mall-list ul {
+    border-radius: 10px !important;
+}
+
+.set2-wrap .mainContents .mall-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
     padding:0 45px;
 }
 
@@ -87,14 +149,11 @@
         max-width: 768px;
         margin: 0 auto;
         justify-content: flex-start;
-        /* padding: 0 20px; */
-        /* background-color: var(--black); */
         height: 100%;
     } 
     .beulraegodeo3-jumungwanri-peiji {
         height: 100%;
         padding:0;
-        /* padding:0 20px 120px; */
     }
     .beulraegodeo3-jumungwanri-peiji .flex-row-2 {
         display: none;
@@ -105,6 +164,19 @@
         width: 100%;
         height: auto;
         margin: 0;
+    }
+
+    #m-top-current {
+        width: 100%;
+        margin: 0;
+    }
+
+    #m-top-current .btn-prev {
+        left:30px;
+    }
+    
+    #m-top-current .btn-add {
+        right:30px;
     }
 
     #m-bottom-menu {
@@ -213,7 +285,6 @@
         margin:0;
         padding:0 20px 120px;
         border-radius: 0;
-        /* background-color: #fff; */
     }
 
     /* ----------------------------------------------------------------------
@@ -497,26 +568,8 @@
         설정1
     ----------------------------------------------------------------------- */
     .set1-wrap .mainContents {
-        width: 100%;
-        height: auto;
-        margin: 0;
         padding:0;
         background-color:#fff;
-    }
-    .set1-wrap .mainContents {
-        padding:0;
-        background-color:#fff;
-    }
-    .set1-wrap .mainContents .menu {
-        margin:0;
-    }
-
-    .set1-wrap .mainContents .menu ul {
-        display: block;
-        width: 100%;
-        height:auto;
-        margin: 0;
-        border-radius: 0;
     }
     .set1-wrap .mainContents .menu ul li {
         border-bottom: 1px solid #d9d9d9;
@@ -527,7 +580,7 @@
     .set1-wrap .mainContents .menu ul li a {
         display: flex;
         align-items: center;
-        height:63px;
+        height:60px;
         position: relative;
         padding:0 45px;
         color:#000;
@@ -549,8 +602,94 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height:63px;
+        height:60px;
         padding:0 45px;
+    }
+
+    /* ----------------------------------------------------------------------
+        설정2
+    ----------------------------------------------------------------------- */
+    .set2-wrap .mainContents {
+        padding:0;
+        background-color: #fff;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        알람
+    ----------------------------------------------------------------------- */
+    .setAlarm-wrap .mainContents {
+        padding: 0;
+        background-color: #fff;
+    }
+    .setAlarm-wrap .mainContents > :nth-child(1),
+    .setAlarm-wrap .mainContents > :nth-child(2) {
+        display: none;
+    }
+    .setAlarm-wrap .mainContents > :nth-child(3) {
+        display: block;
+        height: auto;
+    }
+    .setAlarm-wrap .mainContents > :nth-child(3) > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height:60px;
+        margin: 0;
+        padding: 0 45px;
+    }
+    .setAlarm-wrap .mainContents > :nth-child(3) > div > p {
+        font-size: 13px;
+        color:#444;
+    }
+
+    /* ----------------------------------------------------------------------
+        주문관리
+    ----------------------------------------------------------------------- */
+    .beulraegodeo3-jumungwanri-peiji .flex-row-1,
+    .beulraegodeo3-jumungwanri-peiji .overlap-group {
+        display: none;
+    }
+    .orderAdm-wrap .mainContents {
+        border-top:1px solid #acacac;
+    }
+    .orderAdm-wrap .order-title {
+        margin-top: 20px;
+        font-size:18px;
+        font-weight: 700;
+        color:#fff;
+    }
+    .orderAdm-wrap .order-list {
+        margin-top: 20px;
+    }
+    .orderAdm-wrap .order-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .orderAdm-wrap .order-list li + li {
+        margin-top: 20px;
+    }
+    .orderAdm-wrap .order-list li .data {
+        display:flex;
+        flex-grow: 1;
+        margin-left:20px;
+    }
+    .orderAdm-wrap .order-list li .data dl {
+        flex:1;
+        text-align: center;
+    }
+    .orderAdm-wrap .order-list li .data dl dt {
+        font-size: 12px;
+        color:#444;
+    }
+    .orderAdm-wrap .order-list li .data dl dd {
+        margin-top:15px;
+        font-size: 14px;
     }
 }
 
