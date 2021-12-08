@@ -1,6 +1,11 @@
 /* ----------------------------------------------------------------------
     PC 예외처리
 ----------------------------------------------------------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 #header {
     width: 100%;
 }
@@ -14,55 +19,57 @@
     display: none;
 }
 
-.set1-wrap .mainContents > :nth-child(1),
-.set2-wrap .mainContents > :nth-child(1) {
+.set1-wrap .mainContents> :nth-child(1),
+.set2-wrap .mainContents> :nth-child(1) {
     display: block;
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
-.set1-wrap .mainContents > :nth-child(1) > :nth-child(1),
-.set2-wrap .mainContents > :nth-child(1) > :nth-child(1) {
+.set1-wrap .mainContents> :nth-child(1)> :nth-child(1),
+.set2-wrap .mainContents> :nth-child(1)> :nth-child(1) {
     display: block;
     width: 100%;
-    height:auto;
+    height: auto;
     margin: 0;
     border-radius: 0;
 }
+
 
 /* ----------------------------------------------------------------------
     공통
 ----------------------------------------------------------------------- */
 #m-top-current {
     position: relative;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100% - -28px);
     height: 60px;
-    margin:20px -14px 0;
-    border-bottom:1px solid #dadada;
-    background-color:#fff;
+    margin: 20px -14px 0;
+    border-bottom: 1px solid #dadada;
+    background-color: #fff;
 }
+
 #m-top-current button {
     position: absolute;
-    top:50%;
-    border:none;
+    top: 50%;
+    border: none;
     background-color: transparent;
 }
 
 #m-top-current .btn-prev {
-    left:15px;
-    margin-top:-10px;
+    left: 15px;
+    margin-top: -10px;
 }
 
 #m-top-current .btn-add {
-    right:15px;
-    margin-top:-15px;
+    right: 15px;
+    margin-top: -15px;
 }
 
 #m-top-current .title {
-    color:#444;
+    color: #444;
     font-size: 16px;
     font-weight: 700;
 }
@@ -71,45 +78,50 @@
 /* ----------------------------------------------------------------------
     설정1
 ----------------------------------------------------------------------- */
-
 .set1-wrap .mainContents .menu ul {
     border-radius: 10px !important;
 }
+
 .set1-wrap .mainContents .menu ul li {
     border-bottom: 1px solid #d9d9d9;
     font-size: 14px;
 }
+
 .set1-wrap .mainContents .menu ul li:last-child {
-    border-bottom:none;
+    border-bottom: none;
 }
+
 .set1-wrap .mainContents .menu ul li a {
     display: flex;
     align-items: center;
-    height:60px;
+    height: 60px;
     position: relative;
-    padding:0 45px;
-    color:#000;
+    padding: 0 45px;
+    color: #000;
     font-size: 14px;
 }
+
 .set1-wrap .mainContents .menu ul li a::after {
-    content:'';
-    display:block;
-    position:absolute;
-    top:calc(50% - 10px);
-    right:45px;
-    width:20px;
-    height:20px;
-    background:url(../img/icon-right.svg) no-repeat center / 20px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 45px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-right.svg) no-repeat center / 20px;
 }
+
 .set1-wrap .mainContents .menu ul li.no-arrow a::after {
     display: none;
 }
+
 .set1-wrap .mainContents .menu ul li.version {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:60px;
-    padding:0 45px;
+    height: 60px;
+    padding: 0 45px;
 }
 
 
@@ -126,12 +138,19 @@
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    padding:0 45px;
+    padding: 0 45px;
+}
+
+
+/* ----------------------------------------------------------------------
+    주문관리
+----------------------------------------------------------------------- */
+.orderAdm-wrap .mainContents {
+    display: none;
 }
 
 
 @media only screen and (max-width: 768px) {
-
     /* ----------------------------------------------------------------------
         공통
     ----------------------------------------------------------------------- */
@@ -150,16 +169,19 @@
         margin: 0 auto;
         justify-content: flex-start;
         height: 100%;
-    } 
-    .beulraegodeo3-jumungwanri-peiji {
-        height: 100%;
-        padding:0;
     }
+
+    .beulraegodeo3-jumungwanri-peiji,
+    .beulraegodeo2-coeco-meinpeiji {
+        height: 100%;
+        padding: 0;
+    }
+
     .beulraegodeo3-jumungwanri-peiji .flex-row-2 {
         display: none;
     }
 
-    .mainContents > :nth-child(1) {
+    .mainContents> :nth-child(1) {
         display: block;
         width: 100%;
         height: auto;
@@ -172,45 +194,47 @@
     }
 
     #m-top-current .btn-prev {
-        left:30px;
+        left: 30px;
     }
-    
+
     #m-top-current .btn-add {
-        right:30px;
+        right: 30px;
     }
 
     #m-bottom-menu {
         display: block;
-        position:fixed;
-        bottom:0;
-        left:0;
-        right:0;
-        width:100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
         background-color: #fff;
-        border-top:1px solid #000;
+        border-top: 1px solid #000;
     }
+
     #m-bottom-menu ul {
-        display:flex;
+        display: flex;
         align-items: center;
     }
+
     #m-bottom-menu ul li {
-        flex:1;
+        flex: 1;
         height: 84px;
     }
 
     #m-bottom-menu ul li a {
-        display: flex  ;
+        display: flex;
         height: 100%;
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        padding-top:36px;
+        padding-top: 36px;
         background-repeat: no-repeat;
         background-position: center 20px;
         background-size: 25px;
         text-align: center;
         font-size: 13px;
-        color:#000;
+        color: #000;
     }
 
     #m-bottom-menu ul li a:hover {
@@ -219,41 +243,50 @@
     }
 
     #m-bottom-menu ul li.home a {
-        background-image:url('../img/icon-home.svg');
+        background-image: url('../img/icon-home.svg');
     }
+
     #m-bottom-menu ul li.order a {
-        background-image:url('../img/icon-order.svg');
+        background-image: url('../img/icon-order.svg');
     }
+
     #m-bottom-menu ul li.my a {
-        background-image:url('../img/icon-my.svg');
+        background-image: url('../img/icon-my.svg');
     }
+
     #m-bottom-menu ul li.set a {
-        background-image:url('../img/icon-set.svg');
+        background-image: url('../img/icon-set.svg');
     }
+
 
     /* ----------------------------------------------------------------------
         헤더
     ----------------------------------------------------------------------- */
-    .beulraegodeo3-jumungwanri-peiji .flex-row {
-        flex:0 0 auto;
+    .beulraegodeo3-jumungwanri-peiji .flex-row,
+    .beulraegodeo2-coeco-meinpeiji .flex-row {
+        flex: 0 0 auto;
         align-items: center;
         justify-content: space-between;
         height: 70px;
         margin-top: 20px;
-        padding:0 20px;
+        padding: 0 30px;
     }
 
-    .beulraegodeo3-jumungwanri-peiji .surname {
+    .beulraegodeo3-jumungwanri-peiji .surname,
+    .beulraegodeo2-coeco-meinpeiji .surname {
         min-width: auto;
         min-height: auto;
     }
 
     .beulraegodeo3-jumungwanri-peiji .flex-row>div,
-    .beulraegodeo3-jumungwanri-peiji .flex-row>a {
+    .beulraegodeo3-jumungwanri-peiji .flex-row>a,
+    .beulraegodeo2-coeco-meinpeiji .flex-row>div,
+    .beulraegodeo2-coeco-meinpeiji .flex-row>a {
         display: none;
     }
 
-    .beulraegodeo3-jumungwanri-peiji .flex-row>.logo {
+    .beulraegodeo3-jumungwanri-peiji .flex-row>.logo,
+    .beulraegodeo2-coeco-meinpeiji .flex-row>.logo {
         display: block;
     }
 
@@ -272,135 +305,151 @@
         width: 25px;
     }
 
-    
-
 
     /* ----------------------------------------------------------------------
         본문
     ----------------------------------------------------------------------- */
     .mainContents {
         flex-grow: 1;
-        width:100%;
-        height:auto;
-        margin:0;
-        padding:0 20px 120px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0 30px 120px;
         border-radius: 0;
     }
+
 
     /* ----------------------------------------------------------------------
         로그인
     ----------------------------------------------------------------------- */
     .login-wrap {
-        min-width:320px;
+        min-width: 320px;
         max-width: 480px;
-        margin:0 auto;
+        margin: 0 auto;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji {
-        padding:0;
+        padding: 0;
     }
+
     .beulraegodeo1-rogeuin-peiji .surname {
-        display:flex;
+        display: flex;
         align-items: center;
         width: 100%;
         margin-top: 20px;
-        padding:0 20px;
+        padding: 0 20px;
         height: 70px;
         font-size: 28px;
         text-align: left;
     }
+
     .login-wrap .login {
-        display:block;
-        width:100%;
-        margin-top:75px;
-        font-size:28px;
-        font-weight:700;
+        display: block;
+        width: 100%;
+        margin-top: 75px;
+        font-size: 28px;
+        font-weight: 700;
         text-align: center;
-        color:#fff;
+        color: #fff;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .overlap-group {
         width: 100%;
-        margin:65px auto 0;
-        padding:0 85px;
-        background-color:transparent;
-        border:none;
+        margin: 65px auto 0;
+        padding: 0 85px;
+        background-color: transparent;
+        border: none;
         box-shadow: none;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .text-10,
     .login-wrap .beulraegodeo1-rogeuin-peiji .text-11 {
-        margin-left:0;
+        margin-left: 0;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .line-1,
     .login-wrap .beulraegodeo1-rogeuin-peiji .line-2 {
-        width:100%;
-        background-color:transparent;
-        color:#fff;
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
     }
+
     .login-wrap .x1-1,
     .login-wrap .x12-1 {
-        display:none;
+        display: none;
     }
+
     .login-wrap .screen a {
-        display:block;
-        width:100%;
+        display: block;
+        width: 100%;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .overlap-group1 {
-        display:block;
-        margin:65px 0 0;
-        padding:0;
-        width:100%;
+        display: block;
+        margin: 65px 0 0;
+        padding: 0;
+        width: 100%;
         min-width: 100%;
-        height:30px;
-        background-color:#fff;
+        height: 30px;
+        background-color: #fff;
         border-radius: 0;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .text-14 {
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
-        width:100%;
-        margin:0;
-        min-height:100%;
-        text-align:center;
-        color:#000;
+        width: 100%;
+        margin: 0;
+        min-height: 100%;
+        text-align: center;
+        color: #000;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .flex-row {
-        display:block;
+        display: block;
         position: relative;
-        margin-top:12px;
+        margin-top: 12px;
         min-width: 100%;
     }
-    .login-wrap .flex-row > a {
-        height:30px;
-        border:1px solid #bcbcbc;
+
+    .login-wrap .flex-row>a {
+        height: 30px;
+        border: 1px solid #bcbcbc;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .text-12 {
-        display:none;
+        display: none;
     }
+
     .login-wrap .beulraegodeo1-rogeuin-peiji .text-13 {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-        width:100%;
-        margin:0;
-        padding:0;
-        min-height:100%;
-        font-size:14px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-size: 14px;
     }
+
     .login-wrap .find {
-        display:flex;
-        margin-top:20px;
+        display: flex;
+        margin-top: 20px;
     }
-    .login-wrap .find > a {
-        display:flex;
+
+    .login-wrap .find>a {
+        display: flex;
         justify-content: center;
         align-items: center;
-        flex:1;
-        border:1px solid #bcbcbc;
-        height:30px;
+        flex: 1;
+        border: 1px solid #bcbcbc;
+        height: 30px;
         color: var(--suva-gray);
     }
-    .login-wrap .find > a:first-child {
-        margin-right:8px;
+
+    .login-wrap .find>a:first-child {
+        margin-right: 8px;
     }
 
 
@@ -420,11 +469,11 @@
     }
 
     .join-wrap .beulraegodeo1-1-hoeweongaib-peiji .title {
-        display:flex;
+        display: flex;
         align-items: center;
         width: 100%;
         margin-top: 20px;
-        padding:0 20px;
+        padding: 0 20px;
         height: 70px;
         font-size: 28px;
         text-align: left;
@@ -478,89 +527,115 @@
         font-size: 14px;
     }
 
+
     /* ----------------------------------------------------------------------
-        마이
+        메인
     ----------------------------------------------------------------------- */
-    .my-wrap .mainContents {
-        padding: 0 50px 120px;
+    .main-wrap .beulraegodeo2-coeco-meinpeiji .text-19,
+    .main-wrap .beulraegodeo2-coeco-meinpeiji .text-20,
+    .main-wrap .beulraegodeo2-coeco-meinpeiji .text-20+a,
+    .main-wrap .beulraegodeo2-coeco-meinpeiji .flex-row-1 {
+        display: none;
     }
-    .my-wrap .mainContents > :nth-child(1) {
+
+    .main-wrap {
+        margin-top: 10px;
+        padding: 0 30px;
+    }
+
+    .main-wrap .inner {
+        padding-top: 30px;
+        border-top: 1px solid #5d5d5d;
+    }
+
+    .main-wrap .inner {
+        line-height: 1.5;
+    }
+
+    .main-wrap .txt1 {
+        color: #fff;
+    }
+
+    .main-wrap .txt1 strong {
+        display: block;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .main-wrap .txt1 strong span {
+        color: #e8622f;
+    }
+
+    .main-wrap .total-list {
         margin-top: 20px;
     }
-    .my-wrap .mainContents > :nth-child(1) > :nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:104px;
-        height:104px;
-        margin: 0 auto;
-        background-color: transparent;
-        border:1px solid #fff;
-    }
-    .my-wrap .mainContents > :nth-child(1) > :nth-child(1) > img {
-        margin:0;
-    }
-    .my-wrap .mainContents > :nth-child(1) > :nth-child(2) {
-        display: none;
+
+    .main-wrap .total-list li {
+        color: #fff;
     }
 
-    .my-wrap .mainContents > :nth-child(2) {
-        display: none;
+    .main-wrap .total-list li span {
+        color: #e8622f;
     }
 
-    .my-wrap .mainContents > .frm {
-        width: 100%;
-        margin:30px 0 0;
-    }
-
-    .my-wrap .mainContents > .frm > div {
-        height:28px;
-    }
-
-    .my-wrap .mainContents > .frm > div + div {
-        margin-top:13px;
-    }
-
-    .my-wrap .mainContents > .frm > div > :nth-child(1) {
-        flex: 0 0 auto;
-        width: 90px;
-        font-size:13px;
-    }
-
-    .my-wrap .mainContents > .frm > div > :nth-child(2) {
-        width: 100%;
-        height: auto;
-        margin-left:0;
-        font-size: 13px;
-    }
-
-    .my-wrap .mainContents > .frm > div > input:nth-child(2) {
-        display:none;
-        padding: 0;
-        border:none;
-        pointer-events: none;
-        cursor: text;
-    }
-
-    .my-wrap .mainContents > .frm > :nth-child(2) {
-        display: none;
-    }
-
-    .my-wrap .mainContents > .frm > button {
-        display: none;
-    }
-
-    .my-wrap .m-txt1 {
-        display: block;
+    .main-wrap .oerder-list {
         margin-top: 30px;
-        color:#fff;
-        font-size: 13px;
-        line-height:1.4;
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
     }
-    .my-wrap .m-txt2 {
+
+    .main-wrap .oerder-list ul {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .main-wrap .oerder-list ul li {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 1;
+        text-align: center;
+    }
+
+    .main-wrap .oerder-list ul li span {
         display: block;
-        font-size: 13px;
-        color:#fff;
+        color: #2c83ea;
+        font-weight: 700;
+    }
+
+    .main-wrap .tit1 {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 10px 25px;
+        border-radius: 7px;
+        background-color: #2c83ea;
+        color: #fff;
+    }
+
+    .main-wrap .alarm-list {
+        margin-top: 10px;
+    }
+
+    .main-wrap .alarm-list li {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+
+    .main-wrap .alarm-list li+li {
+        margin-top: 10px;
+    }
+
+    .main-wrap .alarm-list li .date {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #8b8b8b;
+    }
+
+    .main-wrap .alarm-list li p {
+        margin-top: 10px;
+        font-weight: 700;
     }
 
 
@@ -568,49 +643,56 @@
         설정1
     ----------------------------------------------------------------------- */
     .set1-wrap .mainContents {
-        padding:0;
-        background-color:#fff;
+        padding: 0;
+        background-color: #fff;
     }
+
     .set1-wrap .mainContents .menu ul li {
         border-bottom: 1px solid #d9d9d9;
     }
+
     .set1-wrap .mainContents .menu ul li:last-child {
         border-bottom: 1px solid #d9d9d9;
     }
+
     .set1-wrap .mainContents .menu ul li a {
         display: flex;
         align-items: center;
-        height:60px;
+        height: 60px;
         position: relative;
-        padding:0 45px;
-        color:#000;
+        padding: 0 45px;
+        color: #000;
     }
+
     .set1-wrap .mainContents .menu ul li a::after {
-        content:'';
-        display:block;
-        position:absolute;
-        top:calc(50% - 10px);
-        right:45px;
-        width:20px;
-        height:20px;
-        background:url(../img/icon-right.svg) no-repeat center / 20px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 10px);
+        right: 45px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon-right.svg) no-repeat center / 20px;
     }
+
     .set1-wrap .mainContents .menu ul li.no-arrow a::after {
         display: none;
     }
+
     .set1-wrap .mainContents .menu ul li.version {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height:60px;
-        padding:0 45px;
+        height: 60px;
+        padding: 0 45px;
     }
+
 
     /* ----------------------------------------------------------------------
         설정2
     ----------------------------------------------------------------------- */
     .set2-wrap .mainContents {
-        padding:0;
+        padding: 0;
         background-color: #fff;
     }
 
@@ -622,27 +704,32 @@
         padding: 0;
         background-color: #fff;
     }
-    .setAlarm-wrap .mainContents > :nth-child(1),
-    .setAlarm-wrap .mainContents > :nth-child(2) {
+
+    .setAlarm-wrap .mainContents> :nth-child(1),
+    .setAlarm-wrap .mainContents> :nth-child(2) {
         display: none;
     }
-    .setAlarm-wrap .mainContents > :nth-child(3) {
+
+    .setAlarm-wrap .mainContents> :nth-child(3) {
         display: block;
         height: auto;
     }
-    .setAlarm-wrap .mainContents > :nth-child(3) > div {
+
+    .setAlarm-wrap .mainContents> :nth-child(3)>div {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height:60px;
+        height: 60px;
         margin: 0;
         padding: 0 45px;
     }
-    .setAlarm-wrap .mainContents > :nth-child(3) > div > p {
-        font-size: 13px;
-        color:#444;
+
+    .setAlarm-wrap .mainContents> :nth-child(3)>div>p {
+        font-size: 14px;
+        color: #444;
     }
+
 
     /* ----------------------------------------------------------------------
         주문관리
@@ -651,62 +738,168 @@
     .beulraegodeo3-jumungwanri-peiji .overlap-group {
         display: none;
     }
+
     .orderAdm-wrap .mainContents {
-        border-top:1px solid #acacac;
+        display: block;
+        border-top: 1px solid #acacac;
     }
+
     .orderAdm-wrap .order-title {
         margin-top: 20px;
-        font-size:18px;
+        font-size: 18px;
         font-weight: 700;
-        color:#fff;
+        color: #fff;
     }
+
     .orderAdm-wrap .order-list {
         margin-top: 20px;
     }
+
     .orderAdm-wrap .order-list li {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        padding: 20px;
+        padding: 20px 20px 20px 30px;
         border-radius: 10px;
     }
-    .orderAdm-wrap .order-list li + li {
+
+    .orderAdm-wrap .order-list li+li {
         margin-top: 20px;
     }
-    .orderAdm-wrap .order-list li .data {
-        display:flex;
-        flex-grow: 1;
-        margin-left:20px;
+
+    .orderAdm-wrap .order-list li .logo {
+        flex: 0 0 auto;
+        width: 70px;
     }
+
+    .orderAdm-wrap .order-list li .data {
+        display: flex;
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+
     .orderAdm-wrap .order-list li .data dl {
-        flex:1;
+        flex: 1;
         text-align: center;
     }
+
     .orderAdm-wrap .order-list li .data dl dt {
         font-size: 12px;
-        color:#444;
+        color: #444;
     }
+
     .orderAdm-wrap .order-list li .data dl dd {
-        margin-top:15px;
+        margin-top: 15px;
         font-size: 14px;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        마이
+    ----------------------------------------------------------------------- */
+    .my-wrap .mainContents {
+        padding: 0 50px 120px;
+    }
+
+    .my-wrap .mainContents> :nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .my-wrap .mainContents> :nth-child(1)> :nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 104px;
+        height: 104px;
+        margin: 0 auto;
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+    .my-wrap .mainContents> :nth-child(1)> :nth-child(1)>img {
+        margin: 0;
+    }
+
+    .my-wrap .mainContents> :nth-child(1)> :nth-child(2) {
+        display: none;
+    }
+
+    .my-wrap .mainContents> :nth-child(2) {
+        display: none;
+    }
+
+    .my-wrap .mainContents>.frm {
+        width: 100%;
+        margin: 30px 0 0;
+    }
+
+    .my-wrap .mainContents>.frm>div {
+        height: 28px;
+    }
+
+    .my-wrap .mainContents>.frm>div+div {
+        margin-top: 13px;
+    }
+
+    .my-wrap .mainContents>.frm>div> :nth-child(1) {
+        flex: 0 0 auto;
+        width: 90px;
+        font-size: 13px;
+    }
+
+    .my-wrap .mainContents>.frm>div> :nth-child(2) {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    .my-wrap .mainContents>.frm>div>input:nth-child(2) {
+        display: none;
+        padding: 0;
+        border: none;
+        pointer-events: none;
+        cursor: text;
+    }
+
+    .my-wrap .mainContents>.frm> :nth-child(2) {
+        display: none;
+    }
+
+    .my-wrap .mainContents>.frm>button {
+        display: none;
+    }
+
+    .my-wrap .m-txt1 {
+        display: block;
+        margin-top: 30px;
+        color: #fff;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .my-wrap .m-txt2 {
+        display: block;
+        font-size: 13px;
+        color: #fff;
     }
 }
 
 
-
 @media only screen and (max-width: 480px) {
+
     /* ----------------------------------------------------------------------
         회원가입
     ----------------------------------------------------------------------- */
     .join-wrap .beulraegodeo1-1-hoeweongaib-peiji .overlap-group1 {
-        padding:0 60px;
+        padding: 0 60px;
     }
 
     /* ----------------------------------------------------------------------
         로그인
     ----------------------------------------------------------------------- */
     .login-wrap .beulraegodeo1-rogeuin-peiji .overlap-group {
-        padding:0 60px;
+        padding: 0 60px;
     }
 }

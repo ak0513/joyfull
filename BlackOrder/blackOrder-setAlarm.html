@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>설정</title>
     <!-- viewport 수정 -->
@@ -18,141 +18,149 @@
     <link rel="stylesheet" type="text/css" href="./css/contents.css" />
     <!-- //신규 css 적용을 위해 기존에 사용중인 css는 절대경로 사용 -->
     <!--제이쿼리-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  </head>
-  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
 
+<body>
+    <!-- setAlarm-wrap 클래스 추가 -->
     <div class="container-center-horizontal setAlarm-wrap">
-      <div class="beulraegodeo3-jumungwanri-peiji screen">
+        <div class="beulraegodeo3-jumungwanri-peiji screen">
+            <!--헤더-->
+            <!--Header-->
+            <div class='flex-row'>
+                <!-- class logo 추가 -->
+                <a href='main.html' class="logo">
+                    <div class='surname adamina-normal-white-30px'>Black Order</div>
+                </a>
 
-          <!--헤더-->
-          
-        <!--Header-->
-			<div class='flex-row'>
-				<!-- class logo 추가 -->
-				<a href='main.html' class="logo">
-					<div class='surname adamina-normal-white-30px'>Black Order</div>
-				</a>
+                <div class='flex-col'>
+                    <a href='OrderAdm.html'>
+                        <div class='text nanumgothic-bold-white-16px'>주문관리</div>
+                    </a>
+                </div>
 
-				<div class='flex-col'>
-					<a href='OrderAdm.html'>
-						<div class='text nanumgothic-bold-white-16px'>주문관리</div>
-					</a>
-				</div>
+                <a href='TotalIncome.html'>
+                    <div class='text-51 nanumgothic-bold-white-16px'>매출집계</div>
+                </a>
 
-				<a href='TotalIncome.html'>
-					<div class='text-51 nanumgothic-bold-white-16px'>매출집계</div>
-				</a>
+                <div>
+                    <a href='accountLink.php'>
+                        <div class='text-52 nanumgothic-bold-white-16px'>계정연동</div>
+                    </a>
 
-				<div>
-					<a href='accountLink.php'>
-						<div class='text-52 nanumgothic-bold-white-16px'>계정연동</div>
-					</a>
+                </div>
 
-				</div>
+                <div style='margin-left:1vw; border-bottom:1px white solid;'>
+                    <a href='setMyInfo.php'>
+                        <div class='text-53 nanumgothic-bold-white-16px'>설정</div>
+                    </a>
+                </div>
 
-				<div style='margin-left:1vw; border-bottom:1px white solid;'>
-					<a href='setMyInfo.php'>
-						<div class='text-53 nanumgothic-bold-white-16px'>설정</div>
-					</a>
-				</div>
+                <div class='overlap-group2'>
+                    <div class='text-55 nanumgothic-bold-white-12px'>베이직</div>
+                </div>
+                <!-- 알림 추가 -->
+                <a href="#" class="btn-notice"><img src="./img/icon-notice.svg" alt="알림"></a>
+            </div>
+            <!-- /Header-->
 
-				<div class='overlap-group2'>
-					<div class='text-55 nanumgothic-bold-white-12px'>베이직</div>
-				</div>
-				<!-- 알림 추가 -->
-				<a href="#" class="btn-notice"><img src="./img/icon-notice.svg" alt="알림"></a>
-			</div>
-			<!-- /Header-->
+            <!-- 현재위치 -->
+            <div id="m-top-current">
+                <button type="button" class="btn-prev"><img src="./img/icon-left.svg" width="20" alt="이전"></button>
+                <div class="title">알림설정</div>
+            </div>
+            <!-- / 현재위치 -->
 
-			<!-- 현재위치 -->
-			<div id="m-top-current">
-				<button type="button" class="btn-prev"><img src="./img/icon-left.svg" width="20" alt="이전"></button>
-				<div class="title">알림설정</div>
-			</div>
-			<!-- / 현재위치 -->
+            <div class="mainContents">
 
-          <div class="mainContents">
+                <div>
+                    <div>
+                        <img src='img/profileImg.png' alt="프로필">
+                    </div>
+                    <div>
+                        <p class="nanumgothic-extra-bold-white-20px">김블랙 님(블랙오더)</p>
+                        <p class="nanumgothic-normal-125-16px">나의 이용권 : Basic(베이직)</p>
+                        <p class="nanumgothic-normal-125-16px">이용기간 : 2021-01-01 ~ 2021-12-31</p>
+                    </div>
+                </div>
 
-              <div>
-                  <div>
-                      <img src='img/profileImg.png' alt="프로필">
-                  </div>
-                  <div >
-                      <p class="nanumgothic-extra-bold-white-20px">김블랙 님(블랙오더)</p>
-                      <p class="nanumgothic-normal-125-16px">나의 이용권 : Basic(베이직)</p>
-                      <p class="nanumgothic-normal-125-16px">이용기간 : 2021-01-01 ~ 2021-12-31</p>
-                  </div>
-              </div>
+                <div class="nanumgothic-normal-white-16px">
+                    <p onclick="location.href='setMyInfo.php'">내정보관리</p>
+                    <p onclick="location.href='setAlarm.php'">알림 기능</p>
+                    <p onclick="location.href='setVoucher.php'">이용권 서비스</p>
+                    <p onclick="location.href='setPaymentList.php'">결제내역</p>
+                    <p onclick="location.href='setEnvironment.php'">환경설정</p>
+                </div>
 
-              <div class="nanumgothic-normal-white-16px">
-                  <p onclick="location.href='setMyInfo.php'">내정보관리</p>
-                  <p onclick="location.href='setAlarm.php'">알림 기능</p>
-                  <p onclick="location.href='setVoucher.php'">이용권 서비스</p>
-                  <p onclick="location.href='setPaymentList.php'">결제내역</p>
-                  <p onclick="location.href='setEnvironment.php'">환경설정</p>
-              </div>
+                <div>
 
-              <div>
+                    <div>
+                        <p class="nanumgothic-normal-white-16px">신규주문 알림</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
 
-                  <div>
-                      <p class="nanumgothic-normal-white-16px">신규주문 알림</p>
-                      <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider round"></span>
-                      </label>
-                  </div>
+                    <div>
+                        <p class="nanumgothic-normal-white-16px">주문취소 알림</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
 
-                  <div>
-                      <p class="nanumgothic-normal-white-16px">주문취소 알림</p>
-                      <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider round"></span>
-                      </label>
-                  </div>
+                    <div>
+                        <p class="nanumgothic-normal-white-16px">반품/교환 알림</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
 
-                  <div>
-                      <p class="nanumgothic-normal-white-16px">반품/교환 알림</p>
-                      <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider round"></span>
-                      </label>
-                  </div>
+                    <div>
+                        <p class="nanumgothic-normal-white-16px">이용만료예정 알림</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
 
-                  <div>
-                      <p class="nanumgothic-normal-white-16px">이용만료예정 알림</p>
-                      <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider round"></span>
-                      </label>
-                  </div>
+            <!-- Footer-->
+            <div class='flex-row-2'>
+                <div class='text-54 nanumgothic-extra-bold-white-20px flex-row-2child'>
+                    <span class="span nanumgothic-extra-bold-white-20px">blackorder.kr</span>
+                    <span class="span nanumgothic-normal-white-20px"> with </span>
+                    <span class="span nanumgothic-extra-bold-white-20px">Rapid global</span>
+                    <span class="span nanumgothic-normal-white-20px">, Changwon KOREA</span>
+                </div>
+                <img class='x321-1' src='img/------321-1@2x.png' />
+            </div>
+            <!-- /Footer-->
+        </div>
 
-              </div>
-
-          </div>
-
-          
-<!-- Footer-->
-<div class='flex-row-2'>
-  <div class='text-54 nanumgothic-extra-bold-white-20px flex-row-2child'>
-    <span class='span nanumgothic-extra-bold-white-20px'>blackorder.kr</span
-    ><span class='span nanumgothic-normal-white-20px'> with </span
-    ><span class='span nanumgothic-extra-bold-white-20px'>Rapid global</span
-    ><span class='span nanumgothic-normal-white-20px'>, Changwon KOREA</span>
-  </div>
-  <img class='x321-1' src='img/------321-1@2x.png' />
-</div>
-<!-- /Footer-->
-
-      </div>
+        <!-- 모바일 푸터 메뉴 추가 -->
+        <div id="m-bottom-menu">
+            <ul>
+                <li class="home"><a href="#">홈</a></li>
+                <li class="order"><a href="#">주문현황</a></li>
+                <li class="my"><a href="#">마이</a></li>
+                <li class="set"><a href="#">설정</a></li>
+            </ul>
+        </div>
+        <!-- //모바일 푸터 메뉴 추가 -->
     </div>
     <script>
-    /*
-    var check = $("input[type='checkbox']");
-      check.click(function(){
-      $("p")
-    });
-    */
+        /*
+        var check = $("input[type='checkbox']");
+            check.click(function(){
+            $("p")
+        });
+        */
     </script>
-  </body>
+</body>
+
 </html>
