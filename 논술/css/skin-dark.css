@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+body.skin-dark {
+    background-color: #000;
+    color:#fff;
+}
+
+.skin-dark a {
+    color:#fff;
+}
+
+
+/* ----------------------------------------------------------------------
+    폼
+----------------------------------------------------------------------- */
+/* input */
+.skin-dark input[type='tel'],
+.skin-dark input[type='text'],
+.skin-dark input[type='email'],
+.skin-dark input[type='password'],
+.skin-dark input[type='search'],
+.skin-dark input[type='number'] {
+    color: #fff;
+}
+
+.skin-dark textarea {
+    color:#fff;
+}
+
+
+/* ----------------------------------------------------------------------
+    페이지 공통
+----------------------------------------------------------------------- */
+/* 리스트 유형2 */
+.skin-dark .c-list2 ul .item .user {
+    background-image: url('../img/user-user-dark.svg');
+}
+
+.skin-dark .c-list2 ul .item:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* ----------------------------------------------------------------------
+    헤더
+----------------------------------------------------------------------- */
+.skin-dark #header .header-body .mode {
+    background-image: url('../img/icon-sun.svg');
+}
+
+
+/* ----------------------------------------------------------------------
+    신청 완료
+----------------------------------------------------------------------- */
+.skin-dark .complete-application p::before,
+.skin-dark .complete-application p::after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.skin-dark .complete-application p span {
+    color: #ff3d00;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* ----------------------------------------------------------------------
+        폼
+    ----------------------------------------------------------------------- */
+    /* button */
+    .skin-dark .btn-wrap.m-fixed {
+        background-color: #000;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        페이지 공통
+    ----------------------------------------------------------------------- */    
+    /* 테이블 유형1 */
+    .skin-dark .c-table1 table tbody td .date {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+
+    /* ----------------------------------------------------------------------
+        헤더
+    ----------------------------------------------------------------------- */
+    .skin-dark #nav ul li>a {
+        background-color: #000;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        문제풀기
+    ----------------------------------------------------------------------- */
+    .skin-dark .c-solve-submit .btn-submit {
+        background-color: transparent;
+        border-color:#fff;
+        color:#fff;
+    }
+}

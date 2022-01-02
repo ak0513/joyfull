@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>진도별 모의고사</title>
+    <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/skin-dark.css" media="all">
+</head>
+<body>
+
+<div id="wrap">
+    <header id="header">
+        <div class="header-top">
+            <h1>진도별 모의고사</h1>
+            <p class="name">홍길동<span>님</span></p>
+            <ul>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <div class="header-body">
+            <!-- <div class="search-form">
+                <input type="text">
+                <button type="button"><span>검색</span></button>
+            </div> -->
+            <nav id="nav">
+                <h2 class="a11y">주메뉴 안내</h2>
+                <ul>
+                    <li><a href="">문제풀기</a></li>
+                    <li><a href="">채점하기</a></li>
+                    <li class="active"><a href="">커뮤니티</a></li>
+                    <li><a href="">나의결과확인</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="mode" aria-label="다크모드 변경"></button>
+        </div>
+    </header>
+
+    <section id="container" class="m-fixed-btn m-no-padding">
+        <div class="article-write">
+            <div class="input-wrap title">
+                <input type="text" placeholder="제목을 입력해 주세요.">
+            </div>
+            <div class="textarea-wrap">
+                <textarea placeholder="내용을 입력해 주세요."></textarea>
+            </div>
+            <div class="btn-wrap m-fixed">
+                <button type="button" class="btn">작성 완료</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    function skinDark() {
+        document.querySelector('body').classList.toggle('skin-dark')
+    }
+    document.querySelector('.mode').addEventListener('click', skinDark)
+</script>
+</body>
+</html>

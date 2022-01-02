@@ -1,0 +1,559 @@
+@charset "utf-8";
+@import url('./style-pc.css');
+
+@media only screen and (max-width: 1024px) {
+    /* ----------------------------------------------------------------------
+        폼
+    ----------------------------------------------------------------------- */
+    /* button */
+    .btn-wrap.m-fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 44px;
+        margin: 0 !important;
+        padding-bottom: 17px;
+        background-color: #fff;
+    }
+
+    .btn-wrap.m-fixed .btn {
+        display: flex;
+        width: 100%;
+        min-height: 59px;
+        padding: 0 10px;
+        border-radius: 0;
+        font-size: 25px;
+    }
+
+    .btn-write {
+        width: 53px;
+        height: 53px;
+        min-width: 53px;
+        min-height: 53px;
+        margin: 0 auto;
+        padding: 0;
+        background: url('../img/btn-write.svg') no-repeat;
+        color: transparent;
+        font-size: 1px;
+    }
+
+    /* ----------------------------------------------------------------------
+        페이지 공통
+    ----------------------------------------------------------------------- */
+    .m-left {
+        text-align: left !important;
+    }
+    
+    .m-center {
+        text-align: center !important;
+    }
+
+    .m-right {
+        text-align: right !important;
+    }
+
+    .pc-hide {
+        display: block !important;
+    }
+
+    .m-hide {
+        display: none !important;
+    }
+
+    #container {
+        padding: 20px 20px 64px 20px;
+    }
+
+    /* 하단에 fixed 버튼이 있는 경우 추가 */
+    #container.m-fixed-btn {
+        padding-bottom: 145px;
+    }
+
+    /* container의 여백이 없는 경우 추가 */
+    #container.m-no-padding {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* 리스트 유형1 */
+    .c-list1 ul li+li {
+        margin-top: 20px;
+        /* margin-top: 34px; */
+    }
+
+    .c-list1 ul .item {
+        position: relative;
+        display: block;
+        min-height: 85px;
+        padding: 18px 110px 18px 20px
+    }
+
+    .c-list1 ul .item strong {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .c-list1 ul .item .state {
+        position: absolute;
+        top: calc(50% - 17.5px);
+        right: 23px;
+        width: 79px;
+        height: 35px;
+        margin-right: 0;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .c-list1 ul .item .state.state1 {
+        background-color: #4047C1;
+    }
+
+    .c-list1 ul .item .state.state2 {
+        background-color: #FF5B5B;
+    }
+
+    .c-list1 ul .item .state.state3 {
+        background-color: #C4C4C4;
+    }
+
+    .c-list1 ul .item .register {
+        margin-top: 16px;
+        font-size: 12px;
+    }
+
+    .c-list1.type2 ul .item {
+        padding: 18px 20px 50px 20px;
+    }
+
+    .c-list1.type2 ul .item .state {
+        width: auto;
+        margin: 0;
+        top: 72px;
+        left: 20px;
+        right: 20px;
+        border-radius: 8px;
+    }
+
+    /* 리스트 유형2 */
+    .c-list2 ul li+li {
+        margin-top: 21px;
+    }
+
+    .c-list2 ul .item {
+        min-height: 109px;
+        padding: 10px 24px 10px 26px;
+    }
+
+    .c-list2 ul .item .title {
+        font-size: 24px;
+    }
+
+    .c-list2 ul .item .user {
+        padding-top: 45px;
+        background-size: 35px auto;
+        font-size: 14px;
+    }
+
+    /* 리스트 유형3 */
+    .c-list3>ul .item {
+        display: block;
+        position: relative;
+        min-height: auto;
+        padding: 13px 12px 13px 18px;
+    }
+
+    .c-list3>ul>li+li {
+        margin-top: 14px;
+    }
+
+    .c-list3 ul .item .title {
+        font-size: 28px;
+    }
+
+    .c-list3 ul .item .info {
+        margin:10px 0 0 0;
+    }
+
+    .c-list3 ul .item .info li {
+        font-size: 14px;
+    }
+
+    .c-list3 ul .item .btn-wrap {
+        position: absolute;
+        top: 13px;
+        right: 12px;
+    }
+
+    .c-list3 ul .item .btn-wrap.btn-group {
+        display: block;
+    }
+
+    .c-list3 ul .item .btn-wrap.btn-group .btn {
+        display: flex;
+        min-height: 51px;
+        padding: 10px 21px;
+        font-size: 18px;
+    }
+
+    .c-list3 ul .item .btn-wrap.btn-group .btn+.btn {
+        margin-top: 6px;
+        margin-left: 0;
+    }
+
+
+    /* 테이블 공통 */
+    table col.m-hide {
+        display: none !important;
+    }
+
+    table col.pc-hide {
+        display: table-column !important;
+    }
+    
+    /* 테이블 유형1 */
+    .c-table1 table thead th {
+        padding: 12px 10px;
+        background-color: #4047C1;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+    }
+    .c-table1 table thead th + th {
+        border-left: 1px solid #c7c7c7;
+    }
+
+    .c-table1 table tbody th,
+    .c-table1 table tbody td {
+        padding: 12px 10px;
+        border: 1px solid #c7c7c7;
+        font-size: 14px;
+    }
+
+    .c-table1 table tbody td .date {
+        margin-top: 3px;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.37);
+    }
+
+    .m-no-padding .c-table1 table thead th:first-child,
+    .m-no-padding .c-table1 table tbody th:first-child,
+    .m-no-padding .c-table1 table tbody td:first-child {
+        border-left: none;
+    }
+
+    .m-no-padding .c-table1 table thead th:last-child,
+    .m-no-padding .c-table1 table tbody th:last-child,
+    .m-no-padding .c-table1 table tbody td:last-child {
+        border-right: none;
+    }
+
+
+    .c-table1 table thead th:last-child,
+    .c-table1 table tbody th:last-child,
+    .c-table1 table tbody td:last-child,
+    .c-table1 table colgroup col:last-child {
+        display:none;
+    }
+
+    .c-table1 colgroup col.writer {
+        width: 80px !important;
+    }
+
+    .c-table1 th.m-hide,
+    .c-table1 td.m-hide {
+        display:none !important;
+    }
+
+    /* 하단 페이징 */
+    .paging>a,
+    .paging .current {
+        padding: 0 5px;
+        font-size: 16px;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        헤더
+    ----------------------------------------------------------------------- */
+    #header .header-top {
+        padding: 0 10px;
+        height: 37px;
+    }
+
+    #header h1 {
+        font-size: 18px;
+    }
+
+    #header .header-top ul li a {
+        font-size: 13px;
+    }
+
+    #header .header-top .name {
+        position: absolute;
+        bottom: -36px;
+        right: 60px;
+    }
+
+    #header .header-top .name span {
+        margin-left: 8px;
+    }
+
+    #header .header-body {
+        justify-content: space-between;
+        height: 49px;
+        margin: 0;
+        padding: 0 14px 10px 10px;
+    }
+
+    #header .header-body .search-form input {
+        width: 146px;
+        height: 27px;
+        border-radius: 4px 0 0 4px;
+    }
+
+    #header .header-body .search-form button {
+        width: 33px;
+        height: 27px;
+        background: #4047C1 url('../img/btn-search.svg') no-repeat center;
+    }
+
+    #header .header-body .search-form button span {
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+    }
+
+    #header .header-body .mode {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        width: 39px;
+        height: 39px;
+        background-size: 20px;
+    }
+
+    #nav {
+        min-width: 360px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin-right: 0;
+        background-color: #fff;
+        border-top: 1px solid #c4c4c4;
+    }
+
+    #nav ul {
+        display: flex;
+    }
+
+    #nav ul li {
+        flex: 1 1 auto;
+    }
+
+    #nav ul li+li {
+        margin-left: 0;
+        border-left: 1px solid #c4c4c4;
+    }
+
+    #nav ul li>a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 43px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    
+    /* ----------------------------------------------------------------------
+        신청 완료
+    ----------------------------------------------------------------------- */
+    .complete-application {
+        margin-top: 25%;
+    }
+
+    .complete-application p {
+        padding: 36px 0;
+        font-size: 36px;
+    }
+
+    .complete-application p::before,
+    .complete-application p::after {
+        width: 50%;
+    }
+
+    .complete-application p::before {
+        left: 0;
+    }
+
+    .complete-application p::after {
+        right: 0;
+    }
+
+    .complete-application p span {
+        color: #ff3d00;
+    }
+
+    .complete-application p br {
+        display: block;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        게시판
+    ----------------------------------------------------------------------- */
+    /* 게시판 보기 */
+    .article-view h1 {
+        padding: 9px 13px;
+        font-size: 24px;
+    }
+
+    .article-view .info {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+
+    .article-view .info span+span {
+        margin-left: 40px;
+    }
+
+    .article-view .contents {
+        min-height: auto;
+        padding: 13px;
+        border: none;
+        border-top: 1px solid #e1e1e1;
+    }
+
+    /* 게시판 쓰기 */
+    .article-write .title {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .article-write .title input {
+        border: none;
+        height: 53px;
+        padding: 9px 13px;
+        font-size: 24px;
+    }
+
+    .article-write .textarea-wrap {
+        margin-top: 0;
+    }
+
+    .article-write .textarea-wrap textarea {
+        padding: 10px 15px;
+        border: none;
+        font-size: 14px;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        문제풀기
+    ----------------------------------------------------------------------- */
+    .c-solve {
+        display: block;
+    }
+
+    .c-solve>div {
+        min-height: 248px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .c-solve .question {
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .c-solve textarea.answer {
+        height: 300px;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .c-solve-submit .time {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .c-solve-submit .time strong {
+        margin-left: 0;
+        border-bottom: 1px solid #000;
+        font-size: 18px;
+    }
+
+    .c-solve-submit .add-file label {
+        font-size: 14px;
+    }
+
+    .c-solve-submit .btn-submit {
+        width: 69px;
+        min-width: 69px;
+        min-height: 35px;
+        padding: 0;
+        border-radius: 8px;
+        background-color: #fff;
+        border: 2px solid #4047C1;
+        font-size: 14px;
+        color: #4047C1;
+    }
+
+    .c-solve-submit .btn-submit span {
+        display: none;
+    }
+
+    .c-solve-result {
+        margin-top: 15px;
+    }
+
+    .c-solve-result .title {
+        font-size: 18px;
+    }
+
+    .c-solve-result .input-wrap input {
+        width: 162px;
+        height: 51px;
+        padding: 0 20px;
+        border-radius: 9px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    /* ----------------------------------------------------------------------
+        로그인
+    ----------------------------------------------------------------------- */
+    #container.login {
+        align-items: flex-start;
+        height: auto;
+        padding: 100px 43px 20px;
+    }
+
+    .login-wrap {
+        width: 100%;
+    }
+
+    .login-form {
+        margin-top: 70px;
+    }
+
+    .login-form label {
+        text-align: center;
+    }
+
+    .login-wrap .btn-join {
+        margin-top: 35px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>진도별 모의고사</title>
+    <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/skin-dark.css" media="all">
+</head>
+<body>
+
+<div id="wrap">
+    <header id="header">
+        <div class="header-top">
+            <h1>진도별 모의고사</h1>
+            <p class="name">홍길동<span>님</span></p>
+            <ul>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <div class="header-body">
+            <div class="search-form">
+                <input type="text">
+                <button type="button"><span>검색</span></button>
+            </div>
+            <nav id="nav">
+                <h2 class="a11y">주메뉴 안내</h2>
+                <ul>
+                    <li><a href="">수강과목방</a></li>
+                    <li class="active"><a href="">전체과목방</a></li>
+                    <li><a href="">공통게시판</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="mode" aria-label="다크모드 변경"></button>
+        </div>
+    </header>
+
+    <section id="container">
+        <div class="c-list1">
+            <ul>
+                <li>
+                    <a href="" class="item">
+                        <strong class="title">2022년 1월 과학논술</strong>
+                        <span class="state state2">수강중</span>
+                        <span class="register">등록일 : 2021-12-12</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="item">
+                        <strong class="title">2022년 1월 가족법</strong>
+                        <span class="state state3">수강종료</span>
+                        <span class="register">등록일 : 2021-12-12</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="item">
+                        <strong class="title">2022년 2월 영어논술</strong>
+                        <span class="state state1">수강신청</span>
+                        <span class="register">등록일 : 2021-12-12</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="item">
+                        <strong class="title">2022년 3월 수학논술</strong>
+                        <span class="state state1">수강신청</span>
+                        <span class="register">등록일 : 2021-12-12</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<script>
+    function skinDark() {
+        document.querySelector('body').classList.toggle('skin-dark')
+    }
+    document.querySelector('.mode').addEventListener('click', skinDark)
+</script>
+</body>
+</html>
