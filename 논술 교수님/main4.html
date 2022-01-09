@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <link rel="stylesheet" href="./css/skin-dark.css" media="all">
 </head>
-<body>
 
+<body>
 <div id="wrap">
     <header id="header">
         <div class="header-top">
@@ -25,32 +25,44 @@
             </ul>
         </div>
         <div class="header-body">
-            <!-- <div class="search-form">
+            <div class="search-form">
                 <input type="text">
                 <button type="button"><span>검색</span></button>
-            </div> -->
+            </div>
             <nav id="nav">
                 <h2 class="a11y">주메뉴 안내</h2>
                 <ul>
-                    <li><a href="">수강과목방</a></li>
+                    <li><a href="">개설과목방</a></li>
                     <li><a href="">전체과목방</a></li>
-                    <li class="active"><a href="">공통게시판</a></li>
+                    <li class="active"><a href="">과목개설</a></li>
+                    <li><a href="">공통게시판</a></li>
                 </ul>
             </nav>
             <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
         </div>
     </header>
 
-    <section id="container" class="m-fixed-btn m-no-padding">
-        <div class="article-write">
-            <div class="input-wrap title">
-                <input type="text" placeholder="제목을 입력해 주세요.">
+    <section id="container" class="m-fixed-btn">
+        <div class="open-subject">
+            <div class="pc-hide title">개설 과목명을 입력해주세요.</div>
+            <div class="input-wrap">
+                <input type="text" placeholder="개설 과목명을 입력해주세요.">
             </div>
-            <div class="textarea-wrap">
-                <textarea placeholder="내용을 입력해 주세요."></textarea>
+            <div class="method">
+                <strong>개설방식</strong>
+                <div class="radio-wrap">
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="radio">
+                        <span>공개</span>
+                    </label>
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="radio">
+                        <span>비공개</span>
+                    </label>
+                </div>
             </div>
-            <div class="btn-wrap m-fixed">
-                <button type="button" class="btn">작성 완료</button>
+            <div class="btn-wrap right m-fixed">
+                <button class="btn btn-lg">개설하기</button>
             </div>
         </div>
     </section>

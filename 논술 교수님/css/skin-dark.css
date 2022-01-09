@@ -2,11 +2,11 @@
 
 body.skin-dark {
     background-color: #000;
-    color:#fff;
+    color: #fff;
 }
 
 .skin-dark a {
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -24,7 +24,7 @@ body.skin-dark {
 }
 
 .skin-dark textarea {
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -39,6 +39,24 @@ body.skin-dark {
 .skin-dark .c-list2 ul .item:hover {
     background: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* 리스트 유형4 */
+.skin-dark .c-list4 .item .list-bottom .link>a {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 테이블 유형2 */
+.skin-dark .c-table2 table tbody th,
+.skin-dark .c-table2 table tbody td {
+    background-color: #C4C4C4;
+    color: #000;
+}
+
+.skin-dark .c-table2 table a {
+    color: #000;
 }
 
 
@@ -63,24 +81,31 @@ body.skin-dark {
 }
 
 
+/* ----------------------------------------------------------------------
+    이메일 SNS 보내기
+----------------------------------------------------------------------- */
+.skin-dark .send-sns .sns-recipient .target {
+    border-color: #c4c4c4;
+}
+
 @media only screen and (max-width: 1024px) {
+
     /* ----------------------------------------------------------------------
         폼
     ----------------------------------------------------------------------- */
     /* button */
     .skin-dark .btn-wrap.m-fixed {
-        background-color: #000;
+        background-color: #000 !important;
     }
 
 
     /* ----------------------------------------------------------------------
         페이지 공통
-    ----------------------------------------------------------------------- */    
+    ----------------------------------------------------------------------- */
     /* 테이블 유형1 */
     .skin-dark .c-table1 table tbody td .date {
         color: rgba(255, 255, 255, 0.6);
     }
-
 
     /* ----------------------------------------------------------------------
         헤더
@@ -91,9 +116,48 @@ body.skin-dark {
 
 
     /* ----------------------------------------------------------------------
+        게시판
+    ----------------------------------------------------------------------- */
+    /* 게시판 버튼 */
+    .skin-dark .btn-board .btn:not(:last-child) {
+        border-color: #fff;
+        color: #fff;
+    }
+
+
+    /* ----------------------------------------------------------------------
         문제풀기
     ----------------------------------------------------------------------- */
     .skin-dark .c-solve-submit .add-file {
         border-color: #fff;
+    }
+
+    /* ----------------------------------------------------------------------
+        제출답안
+    ----------------------------------------------------------------------- */
+    .skin-dark .submit-answer-header {
+        background-color: transparent;
+    }
+
+    .skin-dark .submit-answer-header .inner {
+        background-image: url('../img/icon-user2.svg');
+        color: #fff;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        이메일 SNS 보내기
+    ----------------------------------------------------------------------- */
+    .skin-dark .send-sns .sns-recipient .target {
+        background-color: #fff;
+        color: #000;
+    }
+
+
+    /* ----------------------------------------------------------------------
+        강제탈퇴
+    ----------------------------------------------------------------------- */
+    .skin-dark .withdrawal .txt::before, .withdrawal .txt::after {
+        background-color: rgba(255, 255, 255, 0.28);
     }
 }

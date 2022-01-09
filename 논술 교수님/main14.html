@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <link rel="stylesheet" href="./css/skin-dark.css" media="all">
 </head>
-<body>
 
+<body>
 <div id="wrap">
     <header id="header">
         <div class="header-top">
@@ -32,25 +32,26 @@
             <nav id="nav">
                 <h2 class="a11y">주메뉴 안내</h2>
                 <ul>
-                    <li><a href="">수강과목방</a></li>
-                    <li><a href="">전체과목방</a></li>
-                    <li class="active"><a href="">공통게시판</a></li>
+                    <li><a href="">문제출제</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li class="active"><a href="">학생현황</a></li>
                 </ul>
             </nav>
             <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
         </div>
     </header>
 
-    <section id="container" class="m-fixed-btn m-no-padding">
-        <div class="article-write">
-            <div class="input-wrap title">
-                <input type="text" placeholder="제목을 입력해 주세요.">
-            </div>
+    <section id="container" class="m-padding-sm m-fixed-btn">
+        <div class="send-sns">
+            <h3 class="c-title2">이메일 SNS 보내기</h3>
             <div class="textarea-wrap">
-                <textarea placeholder="내용을 입력해 주세요."></textarea>
+                <textarea></textarea>
             </div>
-            <div class="btn-wrap m-fixed">
-                <button type="button" class="btn">작성 완료</button>
+            <div class="sns-recipient">
+                <p class="target">받는 사람 : 홍길동, 이금, 김지호, 유시아, 손오공, 김이나</p>
+                <div class="btn-wrap m-fixed">
+                    <button type="button" class="btn">보내기</button>
+                </div>
             </div>
         </div>
     </section>

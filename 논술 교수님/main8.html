@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <link rel="stylesheet" href="./css/skin-dark.css" media="all">
 </head>
-<body>
 
+<body>
 <div id="wrap">
     <header id="header">
         <div class="header-top">
@@ -25,32 +25,54 @@
             </ul>
         </div>
         <div class="header-body">
-            <!-- <div class="search-form">
+            <div class="search-form">
                 <input type="text">
                 <button type="button"><span>검색</span></button>
-            </div> -->
+            </div>
             <nav id="nav">
                 <h2 class="a11y">주메뉴 안내</h2>
                 <ul>
-                    <li><a href="">수강과목방</a></li>
-                    <li><a href="">전체과목방</a></li>
-                    <li class="active"><a href="">공통게시판</a></li>
+                    <li class="active"><a href="">문제출제</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li><a href="">학생현황</a></li>
                 </ul>
             </nav>
             <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
         </div>
     </header>
 
-    <section id="container" class="m-fixed-btn m-no-padding">
-        <div class="article-write">
-            <div class="input-wrap title">
-                <input type="text" placeholder="제목을 입력해 주세요.">
-            </div>
+    <section id="container" class="m-fixed-btn2 m-no-padding">
+        <div class="answer-sheet">
+            <h3 class="c-title1">모범답안 및 배점</h3>
             <div class="textarea-wrap">
-                <textarea placeholder="내용을 입력해 주세요."></textarea>
+                <textarea></textarea>
             </div>
-            <div class="btn-wrap m-fixed">
-                <button type="button" class="btn">작성 완료</button>
+            <div class="answer-bottom">
+                <div class="score">
+                    <strong class="title">점수 부여 방식</strong>
+                    <div class="checkbox-wrap">
+                        <label for="score1">
+                            <input type="checkbox" id="score1">
+                            <span>평균점수</span>
+                        </label>
+                        <label for="score2">
+                            <input type="checkbox" id="score2">
+                            <span>최저값 제외 평균점수</span>
+                        </label>
+                        <label for="score3">
+                            <input type="checkbox" id="score3">
+                            <span>최저 최고값 제외 평균점수</span>
+                        </label>
+                        <label for="score4">
+                            <input type="checkbox" id="score4">
+                            <span>표준점수</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-wrap m-fixed">
+                    <button type="button" class="btn"><span>문제</span>출제</button>
+                    <button type="button" class="btn"><span>문제</span>수정</button>
+                </div>
             </div>
         </div>
     </section>

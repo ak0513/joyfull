@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>진도별 모의고사</title>
+    <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/skin-dark.css" media="all">
+</head>
+<body>
+
+<div id="wrap">
+    <header id="header">
+        <div class="header-top">
+            <h1>진도별 모의고사</h1>
+            <p class="name">홍길동<span>님</span></p>
+            <ul>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <div class="header-body">
+            <div class="search-form">
+                <input type="text">
+                <button type="button"><span>검색</span></button>
+            </div>
+            <nav id="nav" class="sm">
+                <h2 class="a11y">주메뉴 안내</h2>
+                <ul>
+                    <li><a href="">엑셀파일</a></li>
+                    <li><a href="">문제출제</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li class="active"><a href="">학생현황</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
+        </div>
+    </header>
+
+    <section id="container" class="pc-no-padding m-padding-sm">
+        <!-- PC용 -->
+        <div class="m-hide">
+            <div class="c-table2">
+                <table>
+                    <caption>순번, 채점자 소속, 채점자 학번, 채점자 ID, 채점 점수 순으로 안내합니다.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">순번</th>
+                            <th scope="col">채점자 소속</th>
+                            <th scope="col">채점자 학번</th>
+                            <th scope="col">채점자 ID</th>
+                            <th scope="col">채점 점수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- //PC용 -->
+
+        <!-- M용 -->
+        <div class="pc-hide">
+            <div class="c-list4">
+                <ul>
+                    <li class="item">
+                        <div class="list-top">
+                            <ul class="justify-between">
+                                <li class="flex-grow">순번 - 1</li>
+                            </ul>
+                        </div>
+                        <div class="list-body">
+                            <ul>
+                                <li>채점자 소속 : @@@</li>
+                                <li>ID : asdf123</li>
+                                <li>채점 점수 : </li>
+                            </ul>
+                            <ul>
+                                <li class="flex-grow">채점자 확인 : 확인 완료</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="list-top">
+                            <ul class="justify-between">
+                                <li class="flex-grow">순번 - 2</li>
+                            </ul>
+                        </div>
+                        <div class="list-body">
+                            <ul>
+                                <li>채점자 소속 : @@@</li>
+                                <li>ID : asdf123</li>
+                                <li>채점 점수 : </li>
+                            </ul>
+                            <ul>
+                                <li class="flex-grow">채점자 확인 : 확인 완료</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //M용 -->
+    </section>
+</div>
+
+<script>
+    function skinDark() {
+        document.querySelector('body').classList.toggle('skin-dark')
+    }
+    document.querySelector('#change-mode').addEventListener('click', skinDark)
+</script>
+</body>
+</html>

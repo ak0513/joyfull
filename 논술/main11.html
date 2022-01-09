@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>진도별 모의고사</title>
     <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" media="all">
     <link rel="stylesheet" href="./css/style.css" media="all">
     <link rel="stylesheet" href="./css/skin-dark.css" media="all">
 </head>
@@ -37,7 +38,7 @@
                     <li><a href="">나의결과확인</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mode" aria-label="다크모드 변경"></button>
+            <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
         </div>
     </header>
 
@@ -125,7 +126,7 @@
     function skinDark() {
         document.querySelector('body').classList.toggle('skin-dark')
     }
-    document.querySelector('.mode').addEventListener('click', skinDark)
+    document.querySelector('#change-mode').addEventListener('click', skinDark)
 </script>
 </body>
 </html>

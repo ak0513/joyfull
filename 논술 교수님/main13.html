@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>진도별 모의고사</title>
+    <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/skin-dark.css" media="all">
+</head>
+<body>
+
+<div id="wrap">
+    <header id="header">
+        <div class="header-top">
+            <h1>진도별 모의고사</h1>
+            <p class="name">홍길동<span>님</span></p>
+            <ul>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <div class="header-body">
+            <div class="search-form">
+                <input type="text">
+                <button type="button"><span>검색</span></button>
+            </div>
+            <nav id="nav" class="sm">
+                <h2 class="a11y">주메뉴 안내</h2>
+                <ul>
+                    <li><a href="">이메일 / <br class="mo-br">SNS 보내기</a></li>
+                    <li><a href="">엑셀파일</a></li>
+                    <li><a href="">문제출제</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li class="active"><a href="">학생현황</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
+        </div>
+    </header>
+
+    <section id="container" class="pc-no-padding m-padding-sm">
+        <!-- PC용 -->
+        <div class="m-hide">
+            <div class="c-table2">
+                <table>
+                    <caption>순번, 소속, 학번, ID, 이름, 전화번호, 이메일, 응시수, 채점수, 수강/탈퇴, 상세버튼 순으로 안내합니다.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox" name=""></th>
+                            <th scope="col">순번</th>
+                            <th scope="col">소속</th>
+                            <th scope="col">학번</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">이메일</th>
+                            <th scope="col">응시수</th>
+                            <th scope="col">채점수</th>
+                            <th scope="col">수강/<br>탈퇴</th>
+                            <th scope="col">상세</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>1</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>2</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>3</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>4</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>5</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>6</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>7</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>8</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">강퇴</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>9</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">수락</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>10</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">수락</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>11</td>
+                            <td>@@@</td>
+                            <td>20</td>
+                            <td>adf123</td>
+                            <td>김철수</td>
+                            <td>010-1234-5678</td>
+                            <td>asdf@naver.com</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td><a href="">수락</a></td>
+                            <td><a href="">상세</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- //PC용 -->
+
+        <!-- M용 -->
+        <div class="pc-hide">
+            <div class="c-list4">
+                <ul>
+                    <li class="item">
+                        <div class="list-top">
+                            <ul class="justify-end">
+                                <li>
+                                    순번 - 1
+                                    <input type="checkbox" name="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-body">
+                            <ul>
+                                <li>이름 : 김철수</li>
+                                <li>소속 : @@@</li>
+                                <li>학번 : 20</li>
+                                <li class="w-100p">ID : adf123</li>
+                                <li class="w-100p">전화번호 : 010 - 12334 - 5678</li>
+                                <li class="w-100p">이메일 : asdf123@naver.com</li>
+                            </ul>
+                            <ul class="justify-end">
+                                <li class="w-auto">응시수 :</li>
+                                <li class="w-auto">채점수 :</li>
+                            </ul>
+                        </div>
+                        <div class="list-bottom">
+                            <ul>
+                                <li class="link">
+                                    수강/강퇴
+                                    <a href="">수강</a>
+                                </li>
+                                <li><a href="">상세</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="list-top">
+                            <ul class="justify-end">
+                                <li>
+                                    순번 - 2
+                                    <input type="checkbox" name="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-body">
+                            <ul>
+                                <li>이름 : 김철수</li>
+                                <li>소속 : @@@</li>
+                                <li>학번 : 20</li>
+                                <li class="w-100p">ID : adf123</li>
+                                <li class="w-100p">전화번호 : 010 - 12334 - 5678</li>
+                                <li class="w-100p">이메일 : asdf123@naver.com</li>
+                            </ul>
+                            <ul class="justify-end">
+                                <li class="w-auto">응시수 :</li>
+                                <li class="w-auto">채점수 :</li>
+                            </ul>
+                        </div>
+                        <div class="list-bottom">
+                            <ul>
+                                <li class="link">
+                                    수강/강퇴
+                                    <a href="">강퇴</a>
+                                </li>
+                                <li><a href="">상세</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //M용 -->
+    </section>
+</div>
+
+<script>
+    function skinDark() {
+        document.querySelector('body').classList.toggle('skin-dark')
+    }
+    document.querySelector('#change-mode').addEventListener('click', skinDark)
+</script>
+</body>
+</html>
