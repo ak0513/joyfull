@@ -1286,8 +1286,14 @@ table col.pc-hide {
     background-color: #f8f8f8;
 }
 
+
+.exam-period .c-title2 {
+    margin-top: 50px;
+}
+
+
 .exam-period .textarea-wrap {
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 .exam-period .textarea-wrap textarea {
@@ -1296,13 +1302,79 @@ table col.pc-hide {
     border-radius: 3px;
 }
 
+.score-method {
+    display: flex;
+    margin-top: 35px;
+}
+
+.score-method .score {
+    display: flex;
+    align-items: center;
+    padding: 10px 27px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.score-method .score .title {
+    flex-shrink: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.score-method .score .title::after {
+    content: ':';
+    margin: 0 5px;
+}
+
+.score-method .score .checkbox-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.score-method .score .checkbox-wrap label {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.score-method .score .checkbox-wrap input[type='checkbox'] {
+    width: 34px;
+    height: 34px;
+}
+
+.score-method .score .checkbox-wrap label span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.score-method .btn-wrap {
+    display: flex;
+    margin-top: 0 !important;
+    margin-left: 14px;
+}
+
+.score-method .btn-wrap .btn {
+    width: 129px;
+    padding: 0;
+    font-size: 36px;
+}
+
+.score-method .btn-wrap .btn span {
+    display: none;
+}
+
+.score-method .btn-wrap .btn+.btn {
+    margin-left: 6px;
+}
+
 .exam-period .btn-wrap {
     margin-top: 40px;
 }
 
 
 /* ----------------------------------------------------------------------
-    모범답안
+    모범답안(삭제된 페이지)
 ----------------------------------------------------------------------- */
 .answer-sheet .textarea-wrap {
     margin-top: 23px;
@@ -2391,9 +2463,80 @@ table col.pc-hide {
         min-height: 350px;
     }
 
+    .score-method {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .score-method .c-title1 {
+        margin-left: 15px;
+    }
+
+    .score-method .textarea-wrap {
+        margin-top: 15px;
+    }
+
+    .score-method .textarea-wrap textarea {
+        height: 334px;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .score-method .answer-bottom {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .score-method .score {
+        display: block;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .score-method .score .title {
+        display: block;
+        padding: 0 0 10px 10px;
+        border-bottom: 1px solid #c4c4c4;
+        font-size: 18px;
+    }
+
+    .score-method .score .checkbox-wrap input[type='checkbox'] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .score-method .score .checkbox-wrap {
+        padding: 10px 20px;
+    }
+
+    .score-method .score .checkbox-wrap label {
+        margin: 5px;
+    }
+
+    .score-method .score .checkbox-wrap label span {
+        font-size: 14px;
+    }
+
+
+    .score-method .btn-wrap {
+        display: block;
+    }
+
+    .score-method .btn-wrap .btn span {
+        display: inline;
+        margin-right: 5px;
+    }
+
+    .score-method .btn-wrap .btn+.btn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
 
     /* ----------------------------------------------------------------------
-        모범답안
+        모범답안(삭제된 페이지)
     ----------------------------------------------------------------------- */
     .answer-sheet {
         margin-top: 15px;

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>진도별 모의고사</title>
+    <link rel="stylesheet" href="./css/normalize.css" media="all">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" media="all">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/skin-dark.css" media="all">
+</head>
+
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header-top">
+            <h1>진도별 모의고사</h1>
+            <p class="name">홍길동<span>님</span></p>
+            <ul>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <div class="header-body">
+            <div class="search-form">
+                <input type="text">
+                <button type="button"><span>검색</span></button>
+            </div>
+            <nav id="nav">
+                <h2 class="a11y">주메뉴 안내</h2>
+                <ul>
+                    <li class="active"><a href="">문제출제</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li><a href="">학생현황</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="change-mode" class="mode" aria-label="다크모드 변경"></button>
+        </div>
+    </header>
+
+    <section id="container" class="m-fixed-btn2 m-padding-sm">
+        <div class="exam-period">
+            <div class="period">
+                <h3 class="title">응시기간</h3>
+                <ul class="list">
+                    <li class="item">
+                        <div class="day">
+                            <label for="start-day">시작일</label>
+                            <input type="text" id="start-day" value="2021.12.12">
+                        </div>
+                        <div class="time">
+                            <label for="start-time">시작 시간</label>
+                            <input type="text" id="start-time">
+                            <span class="unit">시</span>
+                            <input type="text" id="start-time">
+                            <span class="unit">분</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="day">
+                            <label for="start-day">종료일</label>
+                            <input type="text" id="start-day">
+                        </div>
+                        <div class="time">
+                            <label for="start-time">종료 시간</label>
+                            <input type="text" id="start-time">
+                            <span class="unit">시</span>
+                            <input type="text" id="start-time">
+                            <span class="unit">분</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="add-file">
+                <label for="add">출제 내용</label>
+                <input type="file">
+            </div>
+
+            <h3 class="c-title2">모범답안 및 배점</h3>
+            <div class="textarea-wrap">
+                <textarea></textarea>
+            </div>
+            <div class="score-method">
+                <div class="score">
+                    <strong class="title">점수 부여 방식</strong>
+                    <div class="checkbox-wrap">
+                        <label for="score1">
+                            <input type="checkbox" id="score1">
+                            <span>평균점수</span>
+                        </label>
+                        <label for="score2">
+                            <input type="checkbox" id="score2">
+                            <span>최저값 제외 평균점수</span>
+                        </label>
+                        <label for="score3">
+                            <input type="checkbox" id="score3">
+                            <span>최저 최고값 제외 평균점수</span>
+                        </label>
+                        <label for="score4">
+                            <input type="checkbox" id="score4">
+                            <span>표준점수</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-wrap m-fixed">
+                    <button type="button" class="btn"><span>문제</span>출제</button>
+                    <button type="button" class="btn"><span>문제</span>수정</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    function skinDark() {
+        document.querySelector('body').classList.toggle('skin-dark')
+    }
+    document.querySelector('#change-mode').addEventListener('click', skinDark)
+</script>
+</body>
+</html>
