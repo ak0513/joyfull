@@ -1850,7 +1850,7 @@ table col.pc-hide {
         padding: 0 10px;
         background-color: transparent;
         border: 1px solid #4047C1;
-        color: #fff;
+        color: #000;
         font-size: 13px;
     }
 
@@ -1859,11 +1859,14 @@ table col.pc-hide {
     }
 
     .c-list5 .btn.btn-delete {
+        overflow: hidden;
         position: absolute;
         top: 7px;
         right: 7px;
+        z-index:-1;
         width: 18px;
         height: 18px;
+        min-height:18px;
         margin: 0;
         padding: 0;
         background: url('../img/btn-delete.svg') no-repeat;
